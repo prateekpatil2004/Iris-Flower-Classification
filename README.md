@@ -42,39 +42,38 @@ A machine learning project to classify Iris flowers into three species based on 
    ```bash
    git clone https://github.com/your-username/iris-flower-classification.git
    cd iris-flower-classification
-2. (Optional) Create and activate a virtual environment:
 
-Windows: python -m venv venv
-venv\Scripts\activate
+2. Setup a Virtual Environment:
+   ```bash
+   python -m venv venv
 
-3. Install the required dependencies:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-
-4. Ensure the dataset is available at data/Iris.csv. If not, download it manually from Kaggle:
-
-Iris Dataset on Kaggle
-
-5. Train the model:
+3.Install dependencies:
+  ```bash
+   pip install -r requirements.txt
+1. Train the Model
+Run from the project root:
 
 bash
-Copy
-Edit
 python src/train_model.py
+Output: Saves iris_model.pkl to outputs/.
 
-6.Evaluate the model performance:
-
+2. Evaluate the Model
 bash
-Copy
-Edit
-python src/evaluate_model.py
+python src/evaluate.py
+Output:
 
-7. Test the model with sample inputs:
+Prints accuracy and classification report.
 
-bash
-Copy
-Edit
-python test_model.py
+Saves confusion_matrix.png to outputs/.
+
+3. Jupyter Notebooks:
+Explore notebooks/EDA_and_Model_Training.ipynb for interactive analysis.
+
+📊 Results
+Model: Random Forest Classifier
+
+Accuracy: ~96-98% (varies with random seed)
+
+Confusion Matrix:
+Confusion Matrix
+
