@@ -6,6 +6,28 @@ A machine learning project to classify Iris flowers into three species based on 
 ---
 
 ## 📁 Project Structure
+iris-classification/
+│
+├── data/                            # (optional - for storing CSV if downloaded manually)
+│   └── Iris.csv
+│
+├── notebooks/
+│   └── EDA_and_Modeling.ipynb       # EDA and visualization (feature importance, etc.)
+│
+├── outputs/                         # Store model artifacts and plots
+│   ├── confusion_matrix.png
+│   ├── feature_importance.png
+│   └── iris_model.pkl
+│
+├── src/
+│   ├── load_from_kaggle.py         # ✅ Loads dataset using kagglehub
+│   ├── preprocess.py               # Functions for data cleaning and preparation
+│   ├── train_model.py              # Training script (Random Forest)
+│   └── evaluate.py                 # Model evaluation (metrics and confusion matrix)
+│
+├── requirements.txt                # Python packages needed
+├── README.md                       # 📄 Project overview, usage, instructions
+└── .gitignore                      # Ignore outputs/, __pycache__/, .ipynb_checkpoints, etc.
 
 
 ---
